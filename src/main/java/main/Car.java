@@ -30,8 +30,7 @@ public class Car {
     }
 
     public void printSpecs() {
-        System.out.print("Auto: " + brand + " " + model + " ");
-        System.out.println("Auton nopeus: " + speed + " km/h");
+        System.out.println("Auto: " + brand + " " + model + ", Nopeus: " + speed + " km/h");
     }
 
     public void accelerate(int speed) {

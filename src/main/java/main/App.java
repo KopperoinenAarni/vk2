@@ -20,12 +20,13 @@ public class App
             System.out.println("2) Muokkaa auton merkkiä ja mallia");
             System.out.println("3) Kiihdytä autoa");
             System.out.println("4) Hidasta autoa");
-            System.out.println("0 Lopeta ohjelma");
+            System.out.println("0) Lopeta ohjelma");
 
             if(sc.hasNextLine()) {
                 int i = 0;
                 String stringInput = sc.nextLine();
-                i = Integer.parseInt(stringInput);
+                if (!stringInput.isEmpty()) {
+                    i = Integer.parseInt(stringInput);
                 }
 
                 switch(i) {
@@ -52,13 +53,13 @@ public class App
                         break;
                     case 4:
                         System.out.print("Kuinka monta km/h haluat hidastaa? ");
-                            speed = sc.nextInt();
-                            if (speed > 0) {
-                                newCar.decelerate(speed);
-                            } else {
-                                System.out.print("Nopeuden täytyy olla positiivinen luku.");
-                            }
-                            sc.nextLine();
+                        speed = sc.nextInt();
+                        if (speed > 0) {
+                            newCar.decelerate(speed);
+                        } else {
+                            System.out.print("Nopeuden täytyy olla positiivinen luku.");
+                        }
+                        sc.nextLine();
                         break;
                     case 0:
                         System.out.println("Kiitos ohjelman käytöstä.");
@@ -70,6 +71,6 @@ public class App
                 }
             }
         }
-        sc.close();
+    ;
     }
 }

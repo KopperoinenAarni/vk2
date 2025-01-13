@@ -32,7 +32,7 @@ public class Car {
     public void printSpecs() {
         System.out.print("Auto: " + brand + " " + model + " ");
         System.out.println("Auton nopeus: " + speed + " km/h");
-        }
+    }
 
     public void accelerate(int speed) {
         this.speed += speed;
@@ -42,8 +42,7 @@ public class Car {
         if (this.speed - speed < 0) {
             this.speed = 0;
             return;
-        }
-        else {
+        } else {
             this.speed -= speed;
         }
     }

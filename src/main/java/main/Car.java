@@ -29,7 +29,7 @@ public class Car {
         return speed;    
     }
 
-    public void printSpecs() {
+    public void status() {  
         System.out.println("Auto: " + brand + " " + model + ", Nopeus: " + speed + " km/h");
     }
 

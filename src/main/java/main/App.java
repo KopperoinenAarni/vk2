@@ -31,7 +31,7 @@ public class App
 
                 switch(i) {
                     case 1:
-                        newCar.printSpecs();
+                        newCar.status();
                         break;
                     case 2:
                         System.out.print("Anna uusi auton merkki: ");
@@ -57,7 +57,7 @@ public class App
                         if (speed > 0) {
                             newCar.decelerate(speed);
                         } else {
-                            System.out.print("Nopeuden täytyy olla positiivinen luku.");
+                            System.out.println("Nopeuden täytyy olla positiivinen luku.");
                         }
                         sc.nextLine();
                         break;
